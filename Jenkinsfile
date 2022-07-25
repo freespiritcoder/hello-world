@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pre-test') {
             steps {
-                sh script: 'scripts/pre-test.sh'
+                sh script: 'scripts/pre.sh'
             }
         }
     }
