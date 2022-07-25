@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python pre-test.sh
+python pre-test.py
