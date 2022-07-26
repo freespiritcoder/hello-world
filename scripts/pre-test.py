@@ -1,3 +1,4 @@
-from actions.greet import Greet
+from .actions import greet
 
-print("Pre-checks status: {}".format(Greet.greeting()))
+hello = greet.Greet()
+print("Pre-checks status: {}".format(hello.greeting()))
