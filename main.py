@@ -1,9 +1,7 @@
 
 import sys
-from os import path
-sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
-from scripts import pre_test
+import scripts.pre_test as PT
 
 if sys.argv[1] == "pre-check":
-    obj = pre_test.greet()
+    obj = PT.greet()
     print(constants.STATUS)
