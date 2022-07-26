@@ -1,6 +1,7 @@
 
-hello = greet.Greet()
-print("Pre-checks status: {}".format(hello.greeting()))
+def greet():
+    hello = greet.Greet()
+    print("Pre-checks status: {}".format(hello.greeting()))
 
 if __name__ == "__main__":
     if __package__ is None:
@@ -10,3 +11,5 @@ if __name__ == "__main__":
         from actions import greet
     else:
         from .actions import greet
+    
+    greet()
