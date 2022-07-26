@@ -1,4 +1,4 @@
 #!/bin/bash
 
-python scripts/pre-test.py
+python main.py pre-check
 
