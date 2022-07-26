@@ -1,4 +1,4 @@
 #!/bin/bash
 
-python scripts/pre-test.py
+python scripts/pre_test.py
 
