@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+    agent { docker { image 'python:3.5.1' } }
     stages {
         stage('Pre-test') {
             steps {
-                sh script: './pre.sh'
+                sh 'python --version'
             }
         }
     }
