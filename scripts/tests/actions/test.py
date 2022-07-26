@@ -1,3 +1,3 @@
-from .. import constants
+from actions import constants
 
 print(constants.GREET)
