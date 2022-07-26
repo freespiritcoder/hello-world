@@ -1,3 +1,3 @@
-from actions import constants
+from scripts.tests import constants
 
 print(constants.GREET)
