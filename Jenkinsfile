@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Hello') {
+        stage('Pre-test') {
             steps {
-                echo 'Hello World'
+                sh script: 'scripts/pre.sh'
             }
         }
     }
