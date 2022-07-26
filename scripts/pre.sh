@@ -1,3 +1,4 @@
 #!/bin/bash
 
-python scripts/pre-test.py
+python python/pre-test.py
+python python/actions/test.py
