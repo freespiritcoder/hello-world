@@ -1,3 +1,3 @@
-from .actions import constants
+from actions import greet
 
-print("Pre-checks status: {}".format(constants.STATUS))
+print("Pre-checks status: {}".format(greet.greeting()))
