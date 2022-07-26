@@ -1,2 +1,0 @@
-print("Pre-test verification")
-
