@@ -1,6 +1,6 @@
 
 import sys
-import scripts.pre-test
+from scripts import pre-test
 from scripts.actions import constants
 
 if sys.argv[1] == "pre-check":
