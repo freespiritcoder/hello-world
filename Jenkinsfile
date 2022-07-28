@@ -12,9 +12,11 @@ pipeline {
             }
         }
         stage('value set') {
-            script {
-                temp = sh (script: "python scripts/return.py", returnStdout: true).trim()
-                env.custom_var = temp
+            steps {
+                script {
+                    temp = sh (script: "python scripts/return.py", returnStdout: true).trim()
+                    env.custom_var = temp
+                }
             }
         }
         stage('print custom') {
