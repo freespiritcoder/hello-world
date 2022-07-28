@@ -12,7 +12,7 @@ pipeline {
             }
         }
         stage('value set') {
-            steps {
+            script {
                 temp = sh "python scripts/return.py"
                 env.custom_var = temp
             }
