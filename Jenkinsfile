@@ -12,7 +12,6 @@ pipeline {
             steps {
                 script {
                     temp = sh (script: "python scripts/return.py", returnStdout: true)
-                    env.custom_var = temp
                 }
             }
         }
