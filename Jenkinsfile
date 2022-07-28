@@ -21,7 +21,7 @@ pipeline {
         }
         stage('print custom') {
             steps {
-                echo "${env.custom_var}"
+                echo "${temp}"
             }
         }
     }
