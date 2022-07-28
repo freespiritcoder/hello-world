@@ -11,7 +11,7 @@ pipeline {
         stage('value set') {
             steps {
                 script {
-                    def temp = sh (script: "python scripts/return.py", returnStdout: true)
+                    temp = sh (script: "python scripts/return.py", returnStdout: true).trim()
                 }
             }
         }
