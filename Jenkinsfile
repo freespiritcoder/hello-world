@@ -1,7 +1,4 @@
 pipeline {
-    parameters {
-        string(name: 'custom_var', defaultValue: '', trim: true)
-    }
     agent any
     stages {
         stage('Pre-test') {
