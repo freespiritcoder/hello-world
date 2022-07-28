@@ -14,8 +14,8 @@ pipeline {
         stage('value set') {
             steps {
                 script {
-                    temp = sh (script: "python scripts/return.py", returnStdout: true).trim()
-                    env.custom_var = temp
+                    env.custom_var = sh (script: "python scripts/return.py", returnStdout: true).trim()
+                   # env.custom_var = temp
                 }
             }
         }
