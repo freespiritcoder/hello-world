@@ -17,7 +17,7 @@ pipeline {
         }
         stage('print custom') {
             steps {
-                sh 'python scripts/argu.py ${temp}'
+                sh 'python scripts/argu.py temp'
             }
         }
     }
