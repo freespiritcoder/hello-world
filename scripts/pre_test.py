@@ -3,7 +3,6 @@ import actions.constants as CT
 import requests
 
 def greet():
-    res = requests.post("http://10.200.0.251:8445/query?db=psr&q=show+databases")
     if res.status_code == 200:
         print(res.json())
     else:
