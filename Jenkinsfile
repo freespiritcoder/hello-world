@@ -4,6 +4,7 @@ pipeline {
         stage('Pre-test') {
             steps {
                 sh 'python --version'
+                sh 'pip install requests'
                 sh 'python scripts/pre_test.py'
             }
         }
